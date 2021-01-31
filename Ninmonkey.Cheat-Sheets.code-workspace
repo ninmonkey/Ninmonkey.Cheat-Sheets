@@ -1,0 +1,37 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "name": "Actual Repo"
+        },
+        {
+            "name": "ref1",
+            "path": "..\\..\\..\\2020\\ninmonkeys.com ┐ possible WIPs\\powerquery session dumps"
+        },
+        {
+            "name": "ref2",
+            "path": "..\\..\\..\\2020\\ninmonkeys.com ┐ possible WIPs\\new cheatsheets"
+        },
+        {
+            "name": "ref3",
+            "path": "..\\..\\..\\2020\\ninmonkeys.com ┐ possible WIPs\\cheatsheet on discord api rest requests"
+        },
+        {
+            "name": "ref4",
+            "path": "..\\..\\..\\2020\\ninmonkeys.com ┐ possible WIPs\\SQL"
+        },
+        {
+            "name": "ref5",
+            "path": "..\\..\\..\\2020\\ninmonkeys.com ┐ main"
+        },
+        {
+            "name": "ref6",
+            "path": "..\\..\\..\\2020\\ninmonkeys.com ┐ wip"
+        },
+        {
+            "name": "ref7",
+            "path": "..\\..\\..\\2020\\dotfiles_git"
+        },
+    ],
+    "settings": {}
+}
