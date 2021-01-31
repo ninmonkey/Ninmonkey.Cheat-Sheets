@@ -32,6 +32,7 @@
   - [Examples](#examples)
 - [Command Line Arguments | Everything.Exe:](#command-line-arguments--everythingexe)
   - [Just a few args here:](#just-a-few-args-here)
+  - [Full CommandLine Args](#full-commandline-args)
     - [EFU File List Queries](#efu-file-list-queries)
   - [Managing Everything `Service` on the CLI](#managing-everything-service-on-the-cli)
 - [External Apps / File Manager](#external-apps--file-manager)
@@ -451,11 +452,14 @@ taskbar_notification_title_format=$t$i?{ ($i)}
 | `-create-file-list-include-only-files <filters>`       | include only the specifie                                                                                                                        |
 | `-create-file-list <output-filename> <path-to-scan>`   | [Scan and create `EFU` file list](https://www.voidtools.com/support/everything/file_lists/#how_do_i_make_an_efu_file_list_from_the_command_line) |
 
-
-
 Default un-named instance is `\\\\.\\PIPE\\Everything Service`
 
 > To use the same service for all instances, use the `-service-pipe-name` CLI arg or `service_pipe_name` ini option to specify the same service pipe name.
+
+## Full CommandLine Args
+
+[Docs: Commandline Args](https://www.voidtools.com/support/everything/command_line_options/)
+
 
 ### EFU File List Queries
 
