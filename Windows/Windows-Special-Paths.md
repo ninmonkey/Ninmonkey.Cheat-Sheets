@@ -25,6 +25,10 @@ using `[Environment]::ExpandEnvironmentVariables`
 | Should -Be "$env:AppData\Microsoft" # Good
 ```
 
+## enumerate Env Vars From the `Registry`
+
+
+
 ## AutoExport Env Vars
 
 ```powershell

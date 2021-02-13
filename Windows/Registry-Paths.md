@@ -1,22 +1,28 @@
-# Registry
+
+- [Win+X hotkeys](#winx-hotkeys)
+  - [example: Disable `Win+F`](#example-disable-winf)
+- [Shell Folders](#shell-folders)
+  - [Example](#example)
+- [unsorted](#unsorted)
+- [Uninstall](#uninstall)
 
 
-## Win+X hotkeys
+# Win+X hotkeys
 
 [source](https://www.voidtools.com/support/everything/keyboard_shortcuts/#hotkeys)
 `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced` 
 
-### example: Disable `Win+F`
+## example: Disable `Win+F`
 ```yaml
 Key: DisabledHotkeys
 Value: "F"
 ```
 
-## Shell Folders
+# Shell Folders
 
 `gi 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders'`
 
-### Example
+## Example
 
 ```powershell
 🐒> gi 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders' | fl                                                                           
@@ -77,9 +83,9 @@ PSChildName                            : Shell Folders
 PSProvider                             : Microsoft.PowerShell.Core\Registry                                                                                    
 ```
 
-## unsorted
+# unsorted
 
-## Uninstall
+# Uninstall
 
 | var             | Path                                                                        |
 | --------------- | --------------------------------------------------------------------------- |
