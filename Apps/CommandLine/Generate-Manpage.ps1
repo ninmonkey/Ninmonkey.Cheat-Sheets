@@ -35,6 +35,7 @@ using namespace System.Collections.Generic
     )
 
     $ExportedFiles = [list[string]]::new()
+    $FailedList = [list[string]]::new()
 
 
     foreach ($Command in $CommandList_help) {
@@ -43,18 +44,77 @@ using namespace System.Collections.Generic
         Label 'Invoking' "$Command --help" | Write-Host
         Label 'dest' $manPath | Write-Host
 
-        try {
-            Invoke-NativeCommand $Command -ArgumentList @('--help') -ea Stop
-            | Set-Content $manPath -Encoding utf8
+        function _exportWithHeader {
+            $bodyText = ''
+            $headerText = 'Generated: {0}' -f (Get-Date).tostring('u')
+            $headerText += ", PS: $($PSVersionTable.PSVersion)"
+            # header is optional
+            try {
 
-            # ($manPath | Get-Item)
-            $ExportedFiles.add( $manPath )
+                $headerText += "`nVersion: "
+                $headerText += Invoke-NativeCommand $Command -ArgumentList @('--version') -ea Stop
+                $binPath = Get-NativeCommand $Command
+                | Get-Item | ForEach-Object fullname
+
+                $headerText += "`nPath: $binPath"
+                $headerText += "`n-----`n"
+                $ExportedFiles.Add( "[ OK] '$Command': --version")
+            } catch {
+                $FailedList.Add( "[Err] '$Command': --version")
+            }
+            try {
+                $bodyText += Invoke-NativeCommand $Command -ArgumentList @('--help') -ea Stop | Join-String -sep "`n"
+
+                $ExportedFiles.Add( "[ OK] '$Command': --help")
+            } catch {
+                $FailedList.Add( "[Err] '$Command' --help")
+                # $FailedList.Add( "--version failed: '$Command'"
+            }
+
+            # $headerText, $bodyText | Join-String -sep ''
+            # | Set-Content $manPath -Encoding utf8
+            $headerText, $bodyText
+            | Join-String -sep "`n"
+            | Set-Content $manPath -Encoding utf8
 
             Label 'Wrote' | Write-Host
             Get-Item $manPath | Format-Table Name, LastWriteTime
             | Out-String |  Write-Host
-        } catch {
-            $manPath | Label 'Failed'
+
+        }
+        _exportWithHeader
+        # _exportWithoutHeader
+
+        # function _exportWithoutHeader {
+        #         Invoke-NativeCommand $Command -ArgumentList @('--help') -ea Stop
+        #         | Set-Content $manPath -Encoding utf8
+
+        #         # | Set-Content $manPath -Encoding utf8
+
+        #         # ($manPath | Get-Item)
+        #         $ExportedFiles.add( $manPath )
+
+        #         Label 'Wrote' | Write-Host
+        #         Get-Item $manPath | Format-Table Name, LastWriteTime
+        #         | Out-String |  Write-Host
+        #     # } catch {
+        #     #     $manPath | Label 'Failed'
+        #     # }
+        # }
+        function _exportWithoutHeader {
+            try {
+                Invoke-NativeCommand $Command -ArgumentList @('--help') -ea Stop
+                | Set-Content $manPath -Encoding utf8
+
+                # ($manPath | Get-Item)
+                $ExportedFiles.add( $manPath )
+
+                Label 'Wrote' | Write-Host
+                Get-Item $manPath | Format-Table Name, LastWriteTime
+                | Out-String |  Write-Host
+            } catch {
+                $manPath | Label 'Failed'
+            }
         }
 
 
@@ -76,5 +136,8 @@ using namespace System.Collections.Generic
 
     h1 'Exported files'
     $ExportedFiles
+
+    h1 'Failed files'
+    $FailedList
 
 }
