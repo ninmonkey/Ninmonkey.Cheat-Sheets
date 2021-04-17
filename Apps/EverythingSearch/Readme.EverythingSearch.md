@@ -33,6 +33,7 @@
 - [Command Line Arguments | Everything.Exe:](#command-line-arguments--everythingexe)
   - [Just a few args here:](#just-a-few-args-here)
   - [Full CommandLine Args](#full-commandline-args)
+- [**wip: finish here](#wip-finish-here)
     - [EFU File List Queries](#efu-file-list-queries)
   - [Managing Everything `Service` on the CLI](#managing-everything-service-on-the-cli)
 - [External Apps / File Manager](#external-apps--file-manager)
@@ -68,7 +69,7 @@
   - [Search Hotkeys](https://www.voidtools.com/support/everything/keyboard_shortcuts/#search_edit_shortcuts)
   - [Global Hokeys](https://www.voidtools.com/support/everything/keyboard_shortcuts/#global_keyboard_shortcuts)
   - [Result List Hotkeys](https://www.voidtools.com/support/everything/keyboard_shortcuts/#result_list_shortcuts)
- 
+
 ## Hotkeys
 
 | Key                                        | Description |
@@ -189,7 +190,7 @@ Wildcards when not using `regex` mode
 | `*`      | Match zero or more |
 | `?`      | Match one          |
 
-## Macros 
+## Macros
 
 Default Macros:
 
@@ -288,7 +289,7 @@ Modify functions or regular search if `prefixed` by modifier
 ## Size Syntax | Size Units
 
 `size<unit>`
-`size[kb|mb|gb]` 
+`size[kb|mb|gb]`
 
 ## Size Constants
 
@@ -435,7 +436,7 @@ taskbar_notification_title_format=$t$i?{ ($i)}
 
 
 
-# Command Line Arguments | Everything.Exe: 
+# Command Line Arguments | Everything.Exe:
 
 [`Everything.exe` CLI args](https://www.voidtools.com/support/everything/command_line_options/)
 
@@ -459,6 +460,20 @@ Default un-named instance is `\\\\.\\PIPE\\Everything Service`
 ## Full CommandLine Args
 
 [Docs: Commandline Args](https://www.voidtools.com/support/everything/command_line_options/)
+
+
+| CLI Arg                 | Description |
+| ----------------------- | ----------- |
+| `-debug` and `-verbose` | Debug Mode  |
+
+
+Default un-named instance is `\\\\.\\PIPE\\Everything Service`
+
+> To use the same service for all instances, use the `-service-pipe-name` CLI arg or `service_pipe_name` ini option to specify the same service pipe name.
+>
+# **wip: finish here
+
+https://www.voidtools.com/support/everything/command_line_options/
 
 
 ### EFU File List Queries

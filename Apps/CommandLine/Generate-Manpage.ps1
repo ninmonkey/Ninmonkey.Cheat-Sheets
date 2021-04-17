@@ -7,15 +7,16 @@ using namespace System.Collections.Generic
     }
     # commands that support '--help'
     $CommandList_help = @(
-        'rg'
-        'gh'
         'curl'
-        'python'
-        'pip'
-        # 'code'
-        # 'code-insiders'
         'dotnet'
-    )
+        'gh'
+        'ipconfig'
+        'pip'
+        'python'
+        'rg'
+        # 'code-insiders'
+        # 'code'
+    ) | Sort-Object -Unique
 
     Write-Warning "Nyi because of bug: 'code'"
     # Not sure if this is a a bug or not. currently this creats a new window:
@@ -38,6 +39,7 @@ using namespace System.Collections.Generic
     $FailedList = [list[string]]::new()
 
 
+    # Attempt to output --version as a header, then --help as the content
     foreach ($Command in $CommandList_help) {
         $manPath = Join-Path -Path $Paths.ExportPath "$Command.manpage.txt"
 
@@ -83,44 +85,6 @@ using namespace System.Collections.Generic
 
         }
         _exportWithHeader
-        # _exportWithoutHeader
-
-        # function _exportWithoutHeader {
-        #         Invoke-NativeCommand $Command -ArgumentList @('--help') -ea Stop
-        #         | Set-Content $manPath -Encoding utf8
-
-        #         # | Set-Content $manPath -Encoding utf8
-
-        #         # ($manPath | Get-Item)
-        #         $ExportedFiles.add( $manPath )
-
-        #         Label 'Wrote' | Write-Host
-        #         Get-Item $manPath | Format-Table Name, LastWriteTime
-        #         | Out-String |  Write-Host
-        #     # } catch {
-        #     #     $manPath | Label 'Failed'
-        #     # }
-        # }
-        function _exportWithoutHeader {
-            try {
-                Invoke-NativeCommand $Command -ArgumentList @('--help') -ea Stop
-                | Set-Content $manPath -Encoding utf8
-
-                # ($manPath | Get-Item)
-                $ExportedFiles.add( $manPath )
-
-                Label 'Wrote' | Write-Host
-                Get-Item $manPath | Format-Table Name, LastWriteTime
-                | Out-String |  Write-Host
-            } catch {
-                $manPath | Label 'Failed'
-            }
-        }
-
-
-
-        # | Set-Content $manPath
-        # rg --help | Set-Content $destPath -Encoding utf8
 
     }
 
