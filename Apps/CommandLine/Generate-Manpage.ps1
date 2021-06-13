@@ -1,6 +1,19 @@
 using namespace System.Collections.Generic
 
-& {
+function _dotfiles_Generate-Manpage {
+    <#
+    .synopsis
+        auto-export and save manpages.
+    .description
+        correct verb might be 'new' or 'write' ?
+    .notes
+        future:
+            Task runs automatically on a git pull?
+    #>
+    [CmdletBinding()]
+    param (
+     
+    )
     'Exporting man pages...'
     $Paths = @{
         ExportPath = Join-Path $PSScriptRoot 'Manpage'
@@ -43,8 +56,8 @@ using namespace System.Collections.Generic
     foreach ($Command in $CommandList_help) {
         $manPath = Join-Path -Path $Paths.ExportPath "$Command.manpage.txt"
 
-        Label 'Invoking' "$Command --help" | Write-Host
-        Label 'dest' $manPath | Write-Host
+        Label 'Invoking' "$Command --help" | Write-Information
+        Label 'dest' $manPath | Write-Information
 
         function _exportWithHeader {
             $bodyText = ''
@@ -61,14 +74,16 @@ using namespace System.Collections.Generic
                 $headerText += "`nPath: $binPath"
                 $headerText += "`n-----`n"
                 $ExportedFiles.Add( "[ OK] '$Command': --version")
-            } catch {
+            }
+            catch {
                 $FailedList.Add( "[Err] '$Command': --version")
             }
             try {
                 $bodyText += Invoke-NativeCommand $Command -ArgumentList @('--help') -ea Stop | Join-String -sep "`n"
 
                 $ExportedFiles.Add( "[ OK] '$Command': --help")
-            } catch {
+            }
+            catch {
                 $FailedList.Add( "[Err] '$Command' --help")
                 # $FailedList.Add( "--version failed: '$Command'"
             }
@@ -79,9 +94,9 @@ using namespace System.Collections.Generic
             | Join-String -sep "`n"
             | Set-Content $manPath -Encoding utf8
 
-            Label 'Wrote' | Write-Host
+            Label 'Wrote' | Write-Information
             Get-Item $manPath | Format-Table Name, LastWriteTime
-            | Out-String |  Write-Host
+            | Out-String |  Write-Information
 
         }
         _exportWithHeader
@@ -91,7 +106,7 @@ using namespace System.Collections.Generic
     $CommandList_win | ForEach-Object {
         Write-Warning "Get help using '/?' is NYI"
     }
-    $CommandList_special| ForEach-Object {
+    $CommandList_special | ForEach-Object {
         Write-Warning "Get help using '/?' is NYI"
         Label '-Whatif: Running' $_
     }
@@ -103,5 +118,6 @@ using namespace System.Collections.Generic
 
     h1 'Failed files'
     $FailedList
-
 }
+
+_dotfiles_Generate-Manpage -Verbose -infa Continue

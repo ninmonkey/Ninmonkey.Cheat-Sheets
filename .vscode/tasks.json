@@ -1,0 +1,40 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558    
+    // for the documentation about the tasks.json format
+    /*
+    
+    creating tasks with prompt:
+        https://code.visualstudio.com/docs/editor/variables-reference#_input-variables
+
+    tasks.json schema:
+        https://code.visualstudio.com/docs/editor/tasks-appendix
+    
+    built-in variables:
+        https://code.visualstudio.com/docs/editor/variables-reference
+
+    Env Vars:
+        https://code.visualstudio.com/docs/editor/variables-reference#_environment-variables
+    
+    read variables:
+        https://code.visualstudio.com/docs/editor/variables-reference#_how-can-i-know-a-variables-actual-value
+
+    */
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Test: Echo Variable's Value 🐛",
+            "type": "shell",
+            "command": "echo ${workspaceFolderBasename}/Apps/CommandLine/Generate-Manpage.ps1",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Manpage files 🥼🔖",
+            "type": "shell",
+            "command": "pwsh.exe -f './Apps/CommandLine/Generate-Manpage.ps1'",
+            "problemMatcher": [],
+            // "windows": {
+            //     "args": []                
+            // }
+        }
+    ]
+}
