@@ -1,0 +1,242 @@
+{
+  "orbd.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\orbd.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\orbd.exe"
+  ],
+  "ssh-keygen.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\ssh-keygen.exe",
+    "C:\\WINDOWS\\System32\\OpenSSH\\ssh-keygen.exe"
+  ],
+  "ipython.exe": [
+    "C:\\programs\\Python34\\Scripts\\ipython.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\ipython.exe"
+  ],
+  "sftp.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\sftp.exe",
+    "C:\\WINDOWS\\System32\\OpenSSH\\sftp.exe"
+  ],
+  "jp.exe": [
+    "C:\\ProgramData\\chocolatey\\bin\\jp.exe",
+    "C:\\Users\\cppmo_000\\Documents\\ninbin_2019\\jp.exe"
+  ],
+  "WmiExplorer.exe": [
+    "C:\\ProgramData\\chocolatey\\bin\\WmiExplorer.exe",
+    "C:\\ProgramData\\chocolatey\\lib\\wmiexplorer\\tools\\WmiExplorer.exe"
+  ],
+  "unpack200.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\unpack200.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\unpack200.exe"
+  ],
+  "policytool.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\policytool.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\policytool.exe"
+  ],
+  "timeout.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\timeout.exe",
+    "C:\\Windows\\system32\\timeout.exe"
+  ],
+  "ffmpeg.exe": [
+    "C:\\bin_nin\\ffmpeg\\bin\\ffmpeg.exe",
+    "C:\\ProgramData\\chocolatey\\bin\\ffmpeg.exe"
+  ],
+  "python.exe": [
+    "C:\\Program Files (x86)\\Python36-32\\python.exe",
+    "C:\\programs\\Python34\\python.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe"
+  ],
+  "bash.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "C:\\Windows\\system32\\bash.exe"
+  ],
+  "less.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\less.exe",
+    "C:\\ProgramData\\chocolatey\\bin\\less.exe"
+  ],
+  "npx.cmd": [
+    "C:\\Program Files\\nodejs\\npx.cmd",
+    "C:\\Users\\cppmo_000\\AppData\\Roaming\\npm\\npx.cmd"
+  ],
+  "rg.exe": [
+    "C:\\ProgramData\\chocolatey\\bin\\rg.exe",
+    "C:\\Users\\cppmo_000\\Documents\\ninbin_2019\\rg.exe"
+  ],
+  "hostname.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\hostname.exe",
+    "C:\\Windows\\system32\\HOSTNAME.EXE"
+  ],
+  "reset.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\reset.exe",
+    "C:\\Windows\\system32\\reset.exe"
+  ],
+  "ffprobe.exe": [
+    "C:\\bin_nin\\ffmpeg\\bin\\ffprobe.exe",
+    "C:\\ProgramData\\chocolatey\\bin\\ffprobe.exe"
+  ],
+  "java.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\java.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\java.exe"
+  ],
+  "write.exe": [
+    "C:\\Windows\\system32\\write.exe",
+    "C:\\Windows\\write.exe"
+  ],
+  "iptest.exe": [
+    "C:\\programs\\Python34\\Scripts\\iptest.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\iptest.exe"
+  ],
+  "jabswitch.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\jabswitch.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\jabswitch.exe"
+  ],
+  "npm.cmd": [
+    "C:\\Program Files\\nodejs\\npm.cmd",
+    "C:\\Users\\cppmo_000\\AppData\\Roaming\\npm\\npm.cmd"
+  ],
+  "sort.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\sort.exe",
+    "C:\\Windows\\system32\\sort.exe"
+  ],
+  "find.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\find.exe",
+    "C:\\Windows\\system32\\find.exe"
+  ],
+  "pythonw.exe": [
+    "C:\\Program Files (x86)\\Python36-32\\pythonw.exe",
+    "C:\\programs\\Python34\\pythonw.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Microsoft\\WindowsApps\\pythonw.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\pythonw.exe"
+  ],
+  "ipython3.exe": [
+    "C:\\programs\\Python34\\Scripts\\ipython3.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\ipython3.exe"
+  ],
+  "keytool.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\keytool.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\keytool.exe"
+  ],
+  "expand.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\expand.exe",
+    "C:\\Windows\\system32\\expand.exe"
+  ],
+  "notepad.exe": [
+    "C:\\Windows\\notepad.exe",
+    "C:\\Windows\\system32\\notepad.exe"
+  ],
+  "ffplay.exe": [
+    "C:\\bin_nin\\ffmpeg\\bin\\ffplay.exe",
+    "C:\\ProgramData\\chocolatey\\bin\\ffplay.exe"
+  ],
+  "bcdedit.exe": [
+    "C:\\Program Files (x86)\\EaseUS\\Todo Backup\\bin\\bcdedit.exe",
+    "C:\\Windows\\system32\\bcdedit.exe"
+  ],
+  "pip.exe": [
+    "C:\\programs\\Python34\\Scripts\\pip.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Microsoft\\WindowsApps\\pip.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\pip.exe"
+  ],
+  "ssh.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\ssh.exe",
+    "C:\\WINDOWS\\System32\\OpenSSH\\ssh.exe"
+  ],
+  "rmid.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\rmid.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\rmid.exe"
+  ],
+  "servertool.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\servertool.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\servertool.exe"
+  ],
+  "ktab.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\ktab.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\ktab.exe"
+  ],
+  "ssh-add.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\ssh-add.exe",
+    "C:\\WINDOWS\\System32\\OpenSSH\\ssh-add.exe"
+  ],
+  "bootsect.exe": [
+    "C:\\Program Files (x86)\\EaseUS\\Todo Backup\\bin\\bootsect.exe",
+    "C:\\Windows\\system32\\bootsect.exe"
+  ],
+  "rmiregistry.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\rmiregistry.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\rmiregistry.exe"
+  ],
+  "java-rmi.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\java-rmi.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\java-rmi.exe"
+  ],
+  "klist.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\klist.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\klist.exe",
+    "C:\\Windows\\system32\\klist.exe"
+  ],
+  "ssh-agent.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\ssh-agent.exe",
+    "C:\\WINDOWS\\System32\\OpenSSH\\ssh-agent.exe"
+  ],
+  "virtualenv.exe": [
+    "C:\\programs\\Python34\\Scripts\\virtualenv.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Roaming\\Python\\Python37\\Scripts\\virtualenv.exe"
+  ],
+  "chardetect.exe": [
+    "C:\\Program Files (x86)\\Python36-32\\Scripts\\chardetect.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\chardetect.exe"
+  ],
+  "scp.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\scp.exe",
+    "C:\\WINDOWS\\System32\\OpenSSH\\scp.exe"
+  ],
+  "tar.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\tar.exe",
+    "C:\\Windows\\system32\\tar.exe"
+  ],
+  "kinit.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\kinit.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\kinit.exe"
+  ],
+  "jjs.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\jjs.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\jjs.exe"
+  ],
+  "pack200.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\pack200.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\pack200.exe"
+  ],
+  "iptest3.exe": [
+    "C:\\programs\\Python34\\Scripts\\iptest3.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\iptest3.exe"
+  ],
+  "pip3.exe": [
+    "C:\\programs\\Python34\\Scripts\\pip3.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Microsoft\\WindowsApps\\pip3.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\pip3.exe"
+  ],
+  "whoami.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\whoami.exe",
+    "C:\\Windows\\system32\\whoami.exe"
+  ],
+  "javaw.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\javaw.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\javaw.exe"
+  ],
+  "help.exe": [
+    "C:\\Program Files (x86)\\EaseUS\\Todo Backup\\bin\\Help.exe",
+    "C:\\Windows\\system32\\help.exe"
+  ],
+  "easy_install.exe": [
+    "C:\\Program Files (x86)\\Python36-32\\Scripts\\easy_install.exe",
+    "C:\\programs\\Python34\\Scripts\\easy_install.exe",
+    "C:\\Users\\cppmo_000\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\easy_install.exe"
+  ],
+  "tnameserv.exe": [
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\bin\\tnameserv.exe",
+    "C:\\Program Files\\RedHat\\java-1.8.0-openjdk-1.8.0.265-3\\jre\\bin\\tnameserv.exe"
+  ],
+  "ssh-keyscan.exe": [
+    "C:\\Program Files\\Git\\usr\\bin\\ssh-keyscan.exe",
+    "C:\\WINDOWS\\System32\\OpenSSH\\ssh-keyscan.exe"
+  ]
+}
