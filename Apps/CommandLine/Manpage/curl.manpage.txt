@@ -1,4 +1,4 @@
-Generated: 2021-02-13 14:37:23Z, PS: 7.1.0
+Generated: 2021-06-13 11:50:58Z, PS: 7.1.2
 Version: curl 7.55.1 (Windows) libcurl/7.55.1 WinSSL Release-Date: 2017-11-14, security patched: 2019-11-05 Protocols: dict file ftp ftps http https imap imaps pop3 pop3s smtp smtps telnet tftp  Features: AsynchDNS IPv6 Largefile SSPI Kerberos SPNEGO NTLM SSL 
 Path: C:\Windows\system32\curl.exe
 -----

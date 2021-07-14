@@ -1,5 +1,5 @@
-Generated: 2021-02-13 14:37:23Z, PS: 7.1.0
-Version: pip 20.2.4 from c:\users\cppmo_000\appdata\local\programs\python\python37-32\lib\site-packages\pip (python 3.7) 
+Generated: 2021-06-13 11:50:59Z, PS: 7.1.2
+Version: pip 21.1.1 from C:\Users\cppmo_000\AppData\Roaming\Python\Python37\site-packages\pip (python 3.7) 
 Path: C:\Users\cppmo_000\AppData\Local\Programs\Python\Python37-32\Scripts\pip.exe
 -----
 
@@ -45,7 +45,10 @@ General Options:
                               (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.
   --trusted-host <hostname>   Mark this host or host:port pair as trusted,
                               even though it does not have valid or any HTTPS.
-  --cert <path>               Path to alternate CA bundle.
+  --cert <path>               Path to PEM-encoded CA certificate bundle. If
+                              provided, overrides the default. See 'SSL
+                              Certificate Verification' in pip documentation
+                              for more information.
   --client-cert <path>        Path to SSL client certificate, a single file
                               containing the private key and the certificate
                               in PEM format.
@@ -55,7 +58,7 @@ General Options:
                               Don't periodically check PyPI to determine
                               whether a new version of pip is available for
                               download. Implied with --no-index.
-  --no-color                  Suppress colored output
+  --no-color                  Suppress colored output.
   --no-python-version-warning
                               Silence deprecation warnings for upcoming
                               unsupported Pythons.

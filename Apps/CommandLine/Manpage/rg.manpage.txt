@@ -1,4 +1,4 @@
-Generated: 2021-02-13 14:37:23Z, PS: 7.1.0
+Generated: 2021-06-13 11:51:00Z, PS: 7.1.2
 Version: ripgrep 12.1.1 (rev 7cb211378a) -SIMD -AVX (compiled) +SIMD +AVX (runtime)
 Path: C:\ProgramData\chocolatey\bin\rg.exe
 -----

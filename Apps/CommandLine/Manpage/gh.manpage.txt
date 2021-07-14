@@ -1,5 +1,5 @@
-Generated: 2021-02-13 14:37:23Z, PS: 7.1.0
-Version: gh version 1.2.0 (2020-10-27) https://github.com/cli/cli/releases/latest
+Generated: 2021-06-13 11:50:59Z, PS: 7.1.2
+Version: gh version 1.9.2 (2021-04-20) https://github.com/cli/cli/releases/tag/v1.9.2
 Path: C:\Program Files (x86)\GitHub CLI\gh.exe
 -----
 
@@ -15,6 +15,11 @@ CORE COMMANDS
   release:    Manage GitHub releases
   repo:       Create, clone, fork, and view repositories
 
+ACTIONS COMMANDS
+  actions:    Learn about working with GitHub actions
+  run:        View details about workflow runs
+  workflow:   View details about GitHub Actions workflows
+
 ADDITIONAL COMMANDS
   alias:      Create command shortcuts
   api:        Make an authenticated GitHub API request
@@ -22,6 +27,8 @@ ADDITIONAL COMMANDS
   completion: Generate shell completion scripts
   config:     Manage configuration for gh
   help:       Help about any command
+  secret:     Manage GitHub secrets
+  ssh-key:    Manage SSH keys
 
 FLAGS
   --help      Show help for command
